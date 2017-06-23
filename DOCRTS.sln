@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOCRTS", "DOCRTS\DOCRTS.csproj", "{4BBAB377-5EE0-407C-B5EF-72AAA52C8EF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOCRTS.Tests", "DOCRTS.Tests\DOCRTS.Tests.csproj", "{4890B9CB-7C3A-4351-9435-A740E84E9CCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BBAB377-5EE0-407C-B5EF-72AAA52C8EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BBAB377-5EE0-407C-B5EF-72AAA52C8EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BBAB377-5EE0-407C-B5EF-72AAA52C8EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BBAB377-5EE0-407C-B5EF-72AAA52C8EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4890B9CB-7C3A-4351-9435-A740E84E9CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4890B9CB-7C3A-4351-9435-A740E84E9CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4890B9CB-7C3A-4351-9435-A740E84E9CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4890B9CB-7C3A-4351-9435-A740E84E9CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
