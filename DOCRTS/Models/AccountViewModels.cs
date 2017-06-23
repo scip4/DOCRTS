@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace DOCRTS.Models
+namespace IdentitySample.Models
 {
     public class ExternalLoginConfirmationViewModel
     {
@@ -20,7 +20,6 @@ namespace DOCRTS.Models
         public string SelectedProvider { get; set; }
         public ICollection<System.Web.Mvc.SelectListItem> Providers { get; set; }
         public string ReturnUrl { get; set; }
-        public bool RememberMe { get; set; }
     }
 
     public class VerifyCodeViewModel
@@ -35,8 +34,6 @@ namespace DOCRTS.Models
 
         [Display(Name = "Remember this browser?")]
         public bool RememberBrowser { get; set; }
-
-        public bool RememberMe { get; set; }
     }
 
     public class ForgotViewModel
@@ -61,7 +58,50 @@ namespace DOCRTS.Models
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
     }
+    public class CreateUserViewModel
+    {
+        [Required]
+        [Display(Name = "User Name")]
+        public string UserName { get; set; }
 
+        [Required]
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
+
+        [Required]
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+        [Required]
+        [EmailAddress]
+        [Display(Name = "Email")]
+        public string Email { get; set; }
+
+        [Required]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [DataType(DataType.Password)]
+        [Display(Name = "Password")]
+        public string Password { get; set; }
+
+        [DataType(DataType.Password)]
+        [Display(Name = "Confirm password")]
+        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        public string ConfirmPassword { get; set; }
+
+        // Add the new address properties:
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        [DataType(DataType.PhoneNumber)]
+        [Display(Name = "Work Phone")]
+        public string WorkPhone { get; set; }
+        public string Organization { get; set; }
+        [Display(Name = "Job title")]
+        public string JobTitle { get; set; }
+        // Use a sensible display name for views:
+        [Display(Name = "Postal Code")]
+        public string PostalCode { get; set; }
+        //public IEnumerable<System.Web.Mvc.SelectListItem> RolesList { get; set; }
+    }
     public class RegisterViewModel
     {
         [Required]
